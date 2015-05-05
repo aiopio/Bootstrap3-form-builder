@@ -40,7 +40,7 @@ $(document).ready(function(){
       var half_box_height = ($temp.height()/2);
       var half_box_width = ($temp.width()/2);
       var $target = $("#target");
-      var tar_pos = $target.position();
+      var tar_pos = $target.offset();
       var $target_component = $("#target .component");
 
       $(document).delegate("body", "mousemove", function(mm){
@@ -80,7 +80,7 @@ $(document).ready(function(){
 
         var mu_mouseX = mu.pageX;
         var mu_mouseY = mu.pageY;
-        var tar_pos = $target.position();
+        var tar_pos = $target.offset();
 
         $("#target .component").css({"border-top" : "1px solid white", "border-bottom" : "none"});
 
